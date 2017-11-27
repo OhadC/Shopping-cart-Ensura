@@ -33,7 +33,6 @@ export class ProductsService {
         break;
       }
     }
-    this.pushChange();
   }
 
   deleteProduct(id: number) {
