@@ -8,7 +8,7 @@ import { ShoppingCartService } from './shopping-cart.service';
   templateUrl: './shopping-cart.component.html'
 })
 export class ShoppingCartComponent implements OnInit {
-  private sum: number;
+  sum: number;
   private subscription: Subscription;
 
   constructor(private shoppingCartService: ShoppingCartService) { }

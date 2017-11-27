@@ -9,7 +9,7 @@ import { ProductsService } from '../products.service';
   templateUrl: './product-list.component.html'
 })
 export class ProductListComponent implements OnInit, OnDestroy {
-  private products: Product[];
+  products: Product[];
   private subscription: Subscription;
 
   constructor(private productsService: ProductsService) { }

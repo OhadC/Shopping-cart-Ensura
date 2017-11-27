@@ -9,7 +9,7 @@ import { ShoppingCartService } from '../shopping-cart.service';
   templateUrl: './shopping-cart-list.component.html'
 })
 export class ShoppingCartListComponent implements OnInit, OnDestroy {
-  private shoppingCart: Product[];
+  shoppingCart: Product[];
   private subscription: Subscription;
 
   constructor(private shoppingCartService: ShoppingCartService) { }
