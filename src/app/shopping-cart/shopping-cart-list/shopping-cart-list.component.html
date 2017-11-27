@@ -1,0 +1,11 @@
+<ul *ngIf="shoppingCart.length > 0; else cartEmpty" class="list-group">
+  <li app-shopping-cart-item
+      class="list-group-item"
+      *ngFor="let product of shoppingCart; let i = index"
+      [product]="product" [index]="i"></li>
+</ul>
+<ng-template #cartEmpty>
+  <p class="h4">
+    Your shopping cart is empty!
+  </p>
+</ng-template>
